@@ -1,0 +1,77 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:ital@0;1&display=swap');
+
+// font-family: 'Lato', sans-serif;
+// font-family: 'Playfair Display', serif;
+$playfair-font: 'Playfair Display', serif;
+$lato-font: 'Lato', sans-serif;
+
+body{
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  font-family: $playfair-font;
+  letter-spacing: 1px;
+}
+
+h3, p, .link {
+  font-family: $lato-font;
+}
+
+p {
+  font-size: 15px;
+  line-height: 2;
+  @media only screen and (max-width: 40em) {
+    font-size: 18px;
+  }
+}
+
+.logo {
+  font-size: 30px;
+  :hover {
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: 40rem) {
+    font-size: 22px;
+  }
+}
+
+.link {
+  color: #000000;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.content-title {
+  color: #37BC96;
+}
+
+.contentImage {
+  padding: 50px;
+}
+
+.bowl {
+  padding: 20px;
+}
+
+.boxwrap {
+  position: relative;
+  top: 15%;
+  right: 0;
+  z-index: 1;
+  margin: 0px 5px 0px 5px;
+}
+
+.overlay {
+  content:"";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.6);
+}
+  
